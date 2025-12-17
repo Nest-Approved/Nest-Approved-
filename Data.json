@@ -1,0 +1,69 @@
+{
+  "menu": [
+    { "id": "howto", "title": "How to Use This App" },
+    { "id": "spring", "title": "Spring Reopening Checklist" },
+    { "id": "summer", "title": "Summer Maintenance Checklist" },
+    { "id": "fall", "title": "Fall Shutdown Checklist" },
+    { "id": "winter", "title": "Winter Safety Checklist" },
+    { "id": "safety", "title": "Safety Extras" },
+    { "id": "about", "title": "About Nest Approved" }
+  ],
+  "checklists": {
+    "howto": [
+      {
+        "title": "Use this checklist as a guide",
+        "why": "This app is designed to help homeowners spot common issues before they become expensive problems.",
+        "look": "Work through items at your own pace. You can stop and resume anytime.",
+        "note": "This is educational, not a substitute for a professional inspection."
+      }
+    ],
+    "spring": [
+      {
+        "title": "Inspect exterior hose bibs",
+        "why": "Freeze damage often goes unnoticed until water is turned back on.",
+        "look": "Leaks at shutoff valves, cracked fittings, water stains.",
+        "note": "Homes built before 1990 often lack frost-free hose bibs."
+      }
+    ],
+    "summer": [
+      {
+        "title": "Check deck attachments",
+        "why": "Deck ledger failures are a leading cause of deck collapses.",
+        "look": "Loose fasteners, missing flashing, rot.",
+        "note": "Improper ledger attachment is common in older decks."
+      }
+    ],
+    "fall": [
+      {
+        "title": "Shut down exterior water lines",
+        "why": "Water left in lines can freeze and cause hidden damage.",
+        "look": "Proper shutoff, drained lines, capped hose bibs.",
+        "note": "Compressed air may be required in some systems."
+      }
+    ],
+    "winter": [
+      {
+        "title": "Monitor attic insulation",
+        "why": "Poor insulation contributes to ice dams and heat loss.",
+        "look": "Compressed insulation, air gaps, moisture staining.",
+        "note": "Ice dams often indicate air leakage, not just insulation depth."
+      }
+    ],
+    "safety": [
+      {
+        "title": "Test smoke and CO alarms",
+        "why": "Non-functioning alarms provide no protection.",
+        "look": "Expired units, missing alarms, weak sound.",
+        "note": "Replace alarms older than 10 years."
+      }
+    ],
+    "about": [
+      {
+        "title": "About Nest Approved",
+        "why": "Nest Approved was created by a licensed MN Building Official.",
+        "look": "Based on real-world inspection experience.",
+        "note": "25+ years of professional field experience."
+      }
+    ]
+  }
+}
