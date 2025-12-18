@@ -18,12 +18,187 @@
       }
     ],
     "spring": [
-      {
-        "title": "Inspect exterior hose bibs",
-        "why": "Freeze damage often goes unnoticed until water is turned back on.",
-        "look": "Leaks at shutoff valves, cracked fittings, water stains.",
-        "note": "Homes built before 1990 often lack frost-free hose bibs."
-      }
+    {
+  "title": "Inspect exterior hose bibs",
+  "why": "Freeze damage often shows up when water pressure is restored.",
+  "look": "Leaks at the valve, cracked fittings, water stains on siding or foundation.",
+  "note": "Older homes often lack frost-free hose bibs."
+},
+{
+  "title": "Check interior shutoff valves",
+  "why": "Failed valves leak once exterior lines are pressurized.",
+  "look": "Drips, corrosion, mineral buildup, stiff operation.",
+  "note": "Gate valves commonly fail with age."
+},
+{
+  "title": "Inspect foundation for frost movement",
+  "why": "Freeze/thaw cycles can cause seasonal shifting.",
+  "look": "New cracks, widening gaps, displaced masonry.",
+  "note": "Horizontal cracks deserve further evaluation."
+},
+{
+  "title": "Verify positive grading away from foundation",
+  "why": "Snowmelt water against the foundation leads to intrusion.",
+  "look": "Soil sloping toward the house, settled backfill.",
+  "note": "Minimum recommended slope is 6 inches over 10 feet."
+},
+{
+  "title": "Check downspouts and extensions",
+  "why": "Roof runoff must discharge away from the structure.",
+  "look": "Missing extensions, crushed pipes, disconnected joints.",
+  "note": "Splash blocks are often inadequate alone."
+},
+{
+  "title": "Inspect roof surface from ground",
+  "why": "Winter damage can compromise roofing materials.",
+  "look": "Missing shingles, lifted edges, exposed fasteners.",
+  "note": "Binoculars are sufficient — no roof access needed."
+},
+{
+  "title": "Check roof flashing areas",
+  "why": "Flashing failures cause most roof leaks.",
+  "look": "Bent metal, sealant gaps, rust at penetrations.",
+  "note": "Chimney flashing is a frequent failure point."
+},
+{
+  "title": "Inspect attic for moisture evidence",
+  "why": "Ice dams and condensation leave clues behind.",
+  "look": "Stains, mold-like growth, damp insulation.",
+  "note": "Moisture often indicates air leakage, not just insulation issues."
+},
+{
+  "title": "Confirm attic ventilation paths",
+  "why": "Blocked ventilation traps moisture.",
+  "look": "Insulation covering soffit vents, blocked baffles.",
+  "note": "Improper venting contributes to ice dam formation."
+},
+{
+  "title": "Check exterior siding and trim",
+  "why": "Winter moisture exposes hidden decay.",
+  "look": "Soft wood, peeling paint, open joints.",
+  "note": "South and west elevations often show the most wear."
+},
+{
+  "title": "Inspect window and door seals",
+  "why": "Failed seals allow water and air intrusion.",
+  "look": "Cracked caulk, gaps, moisture staining.",
+  "note": "Re-caulking is maintenance, not a defect."
+},
+{
+  "title": "Test GFCI outlets (interior & exterior)",
+  "why": "GFCIs protect against shock in wet locations.",
+  "look": "Failure to trip or reset.",
+  "note": "Exterior outlets frequently fail over winter."
+},
+{
+  "title": "Inspect exterior electrical covers",
+  "why": "Weather exposure damages protective covers.",
+  "look": "Broken covers, missing gaskets, corrosion.",
+  "note": "In-use covers are required in wet locations."
+},
+{
+  "title": "Examine deck ledger attachment",
+  "why": "Ledger failure can cause deck collapse.",
+  "look": "Missing flashing, loose fasteners, rot.",
+  "note": "Improper ledger attachment is common in older decks."
+},
+{
+  "title": "Check deck walking surface",
+  "why": "Freeze/thaw accelerates wood deterioration.",
+  "look": "Soft boards, splits, popped fasteners.",
+  "note": "Probe suspicious areas with light pressure."
+},
+{
+  "title": "Inspect deck stairs and handrails",
+  "why": "Most deck injuries occur on stairs.",
+  "look": "Loose rails, uneven risers, rot.",
+  "note": "Graspable handrails are often missing."
+},
+{
+  "title": "Inspect foundation vents (if present)",
+  "why": "Open vents affect moisture and energy performance.",
+  "look": "Damage, missing covers, improper seasonal position.",
+  "note": "Many vents should remain closed year-round."
+},
+{
+  "title": "Inspect sump pump operation",
+  "why": "Spring snowmelt stresses drainage systems.",
+  "look": "Proper discharge, abnormal noise, failure to run.",
+  "note": "Test by adding water, not lifting the float."
+},
+{
+  "title": "Check sump discharge location",
+  "why": "Improper discharge recirculates water back to foundation.",
+  "look": "Short discharge, frozen lines, crushed piping.",
+  "note": "Discharge should extend well away from the home."
+},
+{
+  "title": "Inspect basement and crawlspace floors",
+  "why": "Seepage often appears during spring thaw.",
+  "look": "Damp spots, efflorescence, standing water.",
+  "note": "White powder indicates chronic moisture."
+},
+{
+  "title": "Inspect interior ceilings and walls",
+  "why": "Winter roof leaks may show up late.",
+  "look": "Stains, peeling paint, bubbling drywall.",
+  "note": "Water often travels before becoming visible."
+},
+{
+  "title": "Test smoke alarms",
+  "why": "Winter power outages can disable alarms.",
+  "look": "Failure to sound, missing units.",
+  "note": "Replace units older than 10 years."
+},
+{
+  "title": "Test carbon monoxide alarms",
+  "why": "Combustion appliances run heavily in winter.",
+  "look": "Non-responsive alarms, expired units.",
+  "note": "Required outside sleeping areas."
+},
+{
+  "title": "Inspect furnace exhaust venting",
+  "why": "Snow and ice can block vents.",
+  "look": "Obstructions, disconnected joints, corrosion.",
+  "note": "Improper venting is a serious safety issue."
+},
+{
+  "title": "Inspect water heater area",
+  "why": "Leaks often go unnoticed during winter.",
+  "look": "Rust, moisture, corroded fittings.",
+  "note": "Pan and drain recommended where leakage could cause damage."
+},
+{
+  "title": "Check floor drains",
+  "why": "Traps dry out over winter.",
+  "look": "Odors, slow drainage.",
+  "note": "Pour water to refill traps."
+},
+{
+  "title": "Inspect driveway and walkways",
+  "why": "Frost heave creates trip hazards.",
+  "look": "Differential movement, cracking, settlement.",
+  "note": "Liability risk increases with uneven surfaces."
+},
+{
+  "title": "Inspect exterior steps and landings",
+  "why": "Freeze damage compromises stability.",
+  "look": "Movement, cracked concrete, loose connections.",
+  "note": "Handrails required for multiple risers."
+},
+{
+  "title": "Inspect chimney exterior",
+  "why": "Masonry absorbs water and deteriorates.",
+  "look": "Cracked mortar, spalling brick, leaning.",
+  "note": "Crown damage accelerates failure."
+},
+{
+  "title": "Walk the property perimeter",
+  "why": "Seasonal changes reveal new conditions.",
+  "look": "Erosion, drainage paths, exposed utilities.",
+  "note": "This often catches issues missed individually."
+}
+      
     ],
     "summer": [
       {
