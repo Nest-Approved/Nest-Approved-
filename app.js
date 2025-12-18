@@ -37,6 +37,24 @@ function showChecklist(id, title) {
   header.textContent = title;
   app.appendChild(header);
 
+  // INFO PAGES (no checkboxes)
+  if (id === "about" || id === "howto") {
+    const list = data.checklists[id] || [];
+    list.forEach(item => {
+      const block = document.createElement("div");
+      block.className = "info-block";
+      block.innerHTML = `
+        <p><strong>${item.title}</strong></p>
+        <p>${item.why}</p>
+        <p>${item.look}</p>
+        ${item.note ? `<p><em>${item.note}</em></p>` : ""}
+      `;
+      app.appendChild(block);
+    });
+    return;
+  }
+
+  // CHECKLIST PAGES
   const list = data.checklists[id] || [];
   list.forEach((item, index) => {
     const key = `${id}-${index}`;
@@ -75,4 +93,4 @@ function showChecklist(id, title) {
     box.appendChild(details);
     app.appendChild(box);
   });
-               }
+}
