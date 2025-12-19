@@ -1,23 +1,4 @@
-{
-  "menu": [
-    { "id": "spring", "title": "Spring Reopening Checklist" }
-  ],
-
-  "spring": [
-    {
-      "title": "Inspect exterior hose bibs",
-      "why": "Freezing temperatures can crack pipes and fittings.",
-      "look": "Check for leaks when water is turned on.",
-      "note": "Leaks inside walls often go unnoticed.",
-      "images": {
-        "good": "",
-        "bad": ""
-      }
-    }
-  ]
-}
-{
-  "menu": [
+ "menu": [
     { "id": "howto", "title": "How to Use This App" },
     { "id": "spring", "title": "Spring Reopening Checklist" },
     { "id": "summer", "title": "Summer Maintenance Checklist" },
@@ -259,4 +240,62 @@
       }
     ]
   }
+}
+{
+  "menu": [
+    { "id": "spring", "title": "Spring Reopening Checklist" }
+  ],
+
+  "spring": [
+    {
+      "title": "Inspect exterior hose bibs",
+      "why": "Freezing temperatures can crack pipes and fittings over winter.",
+      "look": "Turn on water and inspect for leaks at the valve, piping, and inside walls.",
+      "note": "Interior leaks often show up after exterior faucets are pressurized.",
+      "images": {
+        "good": "images/spring/hose-bib-good.jpg",
+        "bad": "images/spring/hose-bib-bad.jpg"
+      }
+    },
+    {
+      "title": "Check foundation for frost heave damage",
+      "why": "Freeze-thaw cycles can shift or crack foundation walls.",
+      "look": "Look for new cracks, movement, or displaced masonry.",
+      "note": "Pay close attention to corners and previous repair areas.",
+      "images": {
+        "good": "images/spring/foundation-good.jpg",
+        "bad": "images/spring/foundation-bad.jpg"
+      }
+    },
+    {
+      "title": "Inspect roof shingles for winter damage",
+      "why": "Ice dams and wind can loosen or damage shingles.",
+      "look": "Check for missing, curled, or cracked shingles.",
+      "note": "Binoculars can be used when roof access is unsafe.",
+      "images": {
+        "good": "images/spring/shingles-good.jpg",
+        "bad": "images/spring/shingles-bad.jpg"
+      }
+    },
+    {
+      "title": "Clean and inspect gutters and downspouts",
+      "why": "Debris buildup prevents proper drainage and causes water damage.",
+      "look": "Ensure gutters are clear and downspouts discharge away from the foundation.",
+      "note": "Extensions should direct water at least 6 feet away.",
+      "images": {
+        "good": "images/spring/gutters-good.jpg",
+        "bad": "images/spring/gutters-bad.jpg"
+      }
+    },
+    {
+      "title": "Test sump pump operation",
+      "why": "Spring melt increases groundwater around the foundation.",
+      "look": "Pour water into the pit and confirm pump activates and discharges properly.",
+      "note": "Recommend battery backup where none exists.",
+      "images": {
+        "good": "images/spring/sump-good.jpg",
+        "bad": "images/spring/sump-bad.jpg"
+      }
+    }
+  ]
 }
