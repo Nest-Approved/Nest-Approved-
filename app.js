@@ -79,6 +79,7 @@ checkbox.onclick = (e) => e.stopPropagation();
       state[key] = checkbox.checked;
       saveState();
     };
+if (checkbox.checked) state.expanded[key] = false;
 
     label.appendChild(checkbox);
     label.append(item.title);
