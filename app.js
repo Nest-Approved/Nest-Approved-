@@ -1,7 +1,12 @@
- const app = document.getElementById("app");
+const app = document.getElementById("app");
+
 let data = {};
 let state = JSON.parse(localStorage.getItem("nestApprovedState")) || {};
 state.expanded = state.expanded || {};
+
+function saveState() {
+  localStorage.setItem("nestApprovedState", JSON.stringify(state));
+}
 
 fetch("data.json")
   .then(res => res.json())
@@ -10,12 +15,9 @@ fetch("data.json")
     showMenu();
   });
 
-function saveState() {
-  localStorage.setItem("nestApprovedState", JSON.stringify(state));
-}
-
 function showMenu() {
   app.innerHTML = "";
+
   data.menu.forEach(item => {
     const div = document.createElement("div");
     div.className = "menu-item";
@@ -24,81 +26,83 @@ function showMenu() {
     app.appendChild(div);
   });
 }
-box.onclick = () => {
-  state.expanded[key] = !state.expanded[key];
-  saveState();
-  showChecklist(id, title);
-};
 
 function showChecklist(id, title) {
   app.innerHTML = "";
 
+  // Back button
   const back = document.createElement("div");
-  back.className = "back";
+  back.className = "back-button";
   back.textContent = "← Back";
   back.onclick = showMenu;
   app.appendChild(back);
 
-  const header = document.createElement("h3");
-  header.textContent = title;
-  app.appendChild(header);
+  // Title
+  const heading = document.createElement("h2");
+  heading.textContent = title;
+  app.appendChild(heading);
 
-  // INFO PAGES (no checkboxes)
-  if (id === "about" || id === "howto") {
-    const list = data.checklists[id] || [];
-    list.forEach(item => {
-      const block = document.createElement("div");
-      block.className = "info-block";
-      block.innerHTML = `
-        <p><strong>${item.title}</strong></p>
-        <p>${item.why}</p>
-        <p>${item.look}</p>
-        ${item.note ? `<p><em>${item.note}</em></p>` : ""}
-      `;
-      app.appendChild(block);
-    });
-    return;
-  }
-
-  // CHECKLIST PAGES
-  const list = data.checklists[id] || [];
-  list.forEach((item, index) => {
+  data[id].forEach((item, index) => {
     const key = `${id}-${index}`;
-    if (!state[key]) state[key] = false;
 
     const box = document.createElement("div");
     box.className = "checklist-item";
 
+    // Expand / collapse on tap
+    box.onclick = () => {
+      state.expanded[key] = !state.expanded[key];
+      saveState();
+      showChecklist(id, title);
+    };
+
+    // Header row
+    const header = document.createElement("div");
+    header.className = "checklist-header";
+
     const label = document.createElement("label");
+    label.textContent = item.title;
+
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.checked = state[key];
-checkbox.onclick = (e) => e.stopPropagation();
+    checkbox.checked = state[key] || false;
+
+    // Prevent checkbox click from toggling expand
+    checkbox.onclick = e => e.stopPropagation();
 
     checkbox.onchange = () => {
       state[key] = checkbox.checked;
+      if (checkbox.checked) state.expanded[key] = false;
       saveState();
-    };
-if (checkbox.checked) state.expanded[key] = false;
-
-    label.appendChild(checkbox);
-    label.append(item.title);
-    box.appendChild(label);
-
-    const details = document.createElement("div");
-    details.className = "details";
-    details.innerHTML = `
-  <div><strong>Why it matters:</strong> ${item.why}</div>
-      <div><strong>What to look for:</strong> ${item.look}</div>
-      ${item.note ? `<div><strong>Inspector Note:</strong> ${item.note}</div>` : ""}    
-    `;
-
-    box.onclick = () => {
-      details.style.display =
-        details.style.display === "block" ? "none" : "block";
+      showChecklist(id, title);
     };
 
-    box.appendChild(details);
-    app.appendChild(box); 
+    header.appendChild(checkbox);
+    header.appendChild(label);
+    box.appendChild(header);
+
+    // Expanded content
+    if (state.expanded[key]) {
+      const details = document.createElement("div");
+      details.className = "details";
+
+      details.innerHTML = `
+        <div><strong>Why it matters:</strong> ${item.why}</div>
+        <div><strong>What to look for:</strong> ${item.look}</div>
+        ${item.note ? `<div><strong>Inspector Note:</strong> ${item.note}</div>` : ""}
+
+        <div class="image-row">
+          <div class="image good">
+            ${item.images?.good ? `<img src="${item.images.good}" alt="Good example">` : "GOOD example"}
+          </div>
+          <div class="image bad">
+            ${item.images?.bad ? `<img src="${item.images.bad}" alt="Bad example">` : "BAD example"}
+          </div>
+        </div>
+      `;
+
+      box.appendChild(details);
+    }
+
+    app.appendChild(box);
   });
 }
