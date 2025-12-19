@@ -1,4 +1,4 @@
-const app = document.getElementById("app");
+ const app = document.getElementById("app");
 let data = {};
 let state = JSON.parse(localStorage.getItem("nestApprovedState")) || {};
 state.expanded = state.expanded || {};
