@@ -1,5 +1,23 @@
 {
   "menu": [
+    { "id": "spring", "title": "Spring Reopening Checklist" }
+  ],
+
+  "spring": [
+    {
+      "title": "Inspect exterior hose bibs",
+      "why": "Freezing temperatures can crack pipes and fittings.",
+      "look": "Check for leaks when water is turned on.",
+      "note": "Leaks inside walls often go unnoticed.",
+      "images": {
+        "good": "",
+        "bad": ""
+      }
+    }
+  ]
+}
+{
+  "menu": [
     { "id": "howto", "title": "How to Use This App" },
     { "id": "spring", "title": "Spring Reopening Checklist" },
     { "id": "summer", "title": "Summer Maintenance Checklist" },
