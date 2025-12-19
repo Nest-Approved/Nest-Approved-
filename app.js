@@ -88,9 +88,9 @@ if (checkbox.checked) state.expanded[key] = false;
     const details = document.createElement("div");
     details.className = "details";
     details.innerHTML = `
-      <div><strong>Why it matters:</strong> ${item.why}</div>
+  <div><strong>Why it matters:</strong> ${item.why}</div>
       <div><strong>What to look for:</strong> ${item.look}</div>
-      ${item.note ? `<div><strong>Inspector Note:</strong> ${item.note}</div>` : ""}
+      ${item.note ? `<div><strong>Inspector Note:</strong> ${item.note}</div>` : ""}    
     `;
 
     box.onclick = () => {
