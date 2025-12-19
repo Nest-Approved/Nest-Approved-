@@ -99,6 +99,6 @@ if (checkbox.checked) state.expanded[key] = false;
     };
 
     box.appendChild(details);
-    app.appendChild(box);
+    app.appendChild(box); 
   });
 }
