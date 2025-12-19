@@ -73,6 +73,7 @@ function showChecklist(id, title) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = state[key];
+checkbox.onclick = (e) => e.stopPropagation();
 
     checkbox.onchange = () => {
       state[key] = checkbox.checked;
