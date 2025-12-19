@@ -1,4 +1,5 @@
-const app = document.getElementById("app");
+const app = document.getElementById("app");alert("App.js loaded");
+
 
 let data = {};
 let state = JSON.parse(localStorage.getItem("nestApprovedState")) || {};
