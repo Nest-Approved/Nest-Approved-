@@ -24,6 +24,11 @@ function showMenu() {
     app.appendChild(div);
   });
 }
+box.onclick = () => {
+  state.expanded[key] = !state.expanded[key];
+  saveState();
+  showChecklist(id, title);
+};
 
 function showChecklist(id, title) {
   app.innerHTML = "";
